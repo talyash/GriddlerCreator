@@ -1,0 +1,90 @@
+* {
+    margin:0;
+}
+body {
+    font-family:'Arial',sans-serif;
+    font-size:1em;
+    background-color:#fff;
+}
+.clearfix:after {
+    content:'';
+    display:block;
+    clear:both;
+}
+.main {
+    padding:1em;
+}
+#Griddler {
+    margin-bottom:1em;
+    float:left;
+}
+.cell {
+    float:left;
+    width:1em;
+    height:1em;
+    border-right:.0625em solid #000;
+    border-bottom:.0625em solid #000;
+}
+.row:first-child .cell {
+    border-top:.0625em solid #000;
+}
+.cell:first-child {
+    border-left:.0625em solid #000;
+}
+.row:after {
+    content:'';
+    display:block;
+    clear:both;
+}
+form {
+    margin-bottom:1em;
+}
+.cell.clicked {
+    background-color:#000;
+}
+#GriddlerCode {
+    width:30em;
+    height:5em;
+    font-size:1em;
+}
+
+.numbers {
+    line-height:1;
+}
+.numbers.columns {
+    padding-left:.0625em;
+}
+.numbers.columns div {
+    display:inline-block;
+    border-right:.0625em solid #000;
+    height:100%;
+}
+.numbers.columns .num-box {
+    display:block;
+}
+.numbers.rows {
+    text-align:right;
+}
+.numbers.rows div {
+    border-bottom:.0625em solid #000;
+    height:1em;
+}
+.numbers .num-box {
+    width:1em;
+    height:1em;
+    display:inline-block;
+    text-align:center;
+}
+.numbers .num {
+    font-size:.75em;
+}
+.numbers.rows {
+    float:left;
+    margin-top:.0625em;
+}
+
+@media print {
+    form {
+        display:none;
+    }
+}

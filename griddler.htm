@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Griddler Creator</title>
+        <link rel="stylesheet" type="text/css" href="griddler.css?v=1">
+        <script
+                src="https://code.jquery.com/jquery-1.12.4.min.js"
+                integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+                crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="main content" role="main">
+            <form id="CreateGrid">
+                <label for="rows">Rows</label>
+                <input type="number" id="rows" value="40" />
+                <label for="columns">Columns</label>
+                <input type="number" id="columns" value="40" />
+                <button id="submit">Create Grid</button>
+                <button id="clear">Clear</button>
+                <button id="invert">Invert</button>
+                <button id="generate-numbers">Generate Numbers</button>
+                <button id="invisibility">Remove black</button>
+            </form>
+            <div class="clearfix">
+                <div id="ColumnNumbers" class="numbers columns empty"></div>
+                <div id="RowNumbers" class="numbers rows empty"></div>
+                <div id="Griddler">
+                </div>
+            </div>
+            <form id="ImportExport">
+                <textarea id="GriddlerCode"></textarea>
+                <div>
+                    <button id="import">Import</button>
+                    <button id="export">Export</button>
+                </div>
+            </form>
+        </div>
+
+        <script src="griddler.js?v=3"></script>
+    </body>
+</html>
